@@ -30,9 +30,11 @@ module.exports = function(router, database) {
       // if (bcrypt.compareSync(password, user.password)) {
       //   return user;
       // }
-      if(password === user.password){
+      if (password === user.password){
         return user;
       }
+
+      
       return null;
     });
   }
